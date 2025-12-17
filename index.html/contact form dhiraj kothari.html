@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       *{
+        padding: 0px;
+        box-sizing: border-box;
+        margin: 0px;
+
+    }
+
+    body{
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        border: 3px solid peru;
+        
+
+    }
+    .head1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: cursive;
+        color:  darkturquoise;
+        font-weight: bold;
+        
+    }
+
+     .head2{
+        margin-left: 50px;
+        margin-top: 60px;
+        color: blue;
+        
+    }
+    #namebox{
+        margin: 15px;
+       border-radius: 4px;
+       height: 40px;
+       width: 200px;
+       
+
+        
+        
+    }
+    .info{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .box1{
+        height:50px;
+        width: 400px;
+        border: 1px solid transparent;
+        display: flex;
+          justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 150px;
+        justify-content: space-between;
+
+    }
+    .sbtbtn{
+        height: 30px;
+        width: 75px;
+        border: 1px solid green;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 17px;
+        font-family: cursive;
+
+       
+
+    }
+    .sbtbtn:hover{
+        background-color:lightgreen
+        
+        
+
+        
+        
+
+    }
+
+
+</style>
+<body>
+<div class="head1">
+    <h1>CONTACT</h1>
+</div>
+
+<div class="head2">
+    <h3>CUSTOMER INFROMATION</h3> <br> <br>
+    </div>
+
+    <div class="info">
+    <label>Customer  Name</label> 
+    <input type="textbox" placeholder= "Name"id="namebox">
+    <label>Contact Number</label>
+    <input type="textbox" placeholder="contact No."id="namebox"> <br>
+    <label>Home Address</label> 
+    <input type="textbox" placeholder="HomeAddress"id="namebox">
+    <label>Email-Address</label>
+    <input type="textbox"placeholder="Email-Address"id="namebox"> <br> <br>
+    <h3 class="head2">Service Request Details:-<h3> <br>
+    <label>Requested</label> <br> <br>
+
+    <div class="box1">
+   <div class="option"> <input type="radio" placeholder="repair"> <label> Repair </label> </div>
+   <div class="option"> <input type="radio" placeholder="maintenance"> <label> Maintenance </label> </div>
+   <div class="option"> <input type ="radio"placeholder="Installation"> <label>Installation</label></div>
+   <div class="option"> <input type="radio" placeholder="other"> <label>Other</label> <br> </div>
+    </div>
+
+    <label>Description of Services Requested :-</label> 
+    <input type ="textbox" placeholder="Services requested"id="namebox"> <br> <br>
+    <label>Date and Time Requested :-</label> 
+    <input type="date" placeholder="mm/dd/yyyy"id="namebox"> <br> 
+    <label>Urgency leval</label> <br> <br> 
+
+    <div class="box1">
+   <div class="option"> <input type="radio"placeholder="Low"><label >Low</label></div>
+    <div class="option">  <input type="radio" placeholder="Medium"><label>Medium</label> </div>
+    <div class="option"><input type="radio" placeholder="High"><label>High</label> </div>
+    <div class="option"><input type="radio" placeholder="emergency"><label>Emergency</label> </div>
+    </div>
+
+    <h3 class="head2">Approval</h3> 
+    <label>Applicant Name</label>   
+    <input type="textbox" placeholder="Applicant Name"id="namebox">  
+    <label>Request Submidssiice on Date</label>  
+    <input type="date" placeholder="mm/dd/yyyy"id="namebox">
+     <h3 class="head2">ServPersonnel</h3> <br>
+     <label>Completed By</label>
+     <input type="textbox" placeholder="complete"id="namebox">
+     <label>Date</label> 
+     <input type="date"placeholder="mm/dd/yyyy"id=namebox> <br> <br>
+     <label>Approved</label>
+     <input type="textbox"placeholder="Approve"id="namebox">
+     <label>Date</label>
+     <input type="date" placeholder="date"id="namebox"> <br> <br>
+      </div>
+
+      <div>
+     <button class="sbtbtn">Submit</button>
+     </div>
+
+
+   <script>
+let contactBtn=document.createElement("button");
+let div=document.querySelector('.head1');
+contactBtn.innerText="D/L MODE";
+console.log(contactBtn.innerText);
+div.append(contactBtn);
+contactBtn.style.backgroundColor="yellow";
+contactBtn.style.color="red";
+contactBtn.style.marginRight="1050px";
+contactBtn.style.width="100px";
+contactBtn.style.height="40px";
+contactBtn.style.border="transparent";
+contactBtn.style.borderRadius="25px";
+let btn2=document.querySelector("button");
+let currMode="light";
+btn2.addEventListener("click",()=>{
+    if (currMode=="light")
+{
+    currMode="dark";
+    document.querySelector("body").style.backgroundColor="darkGrey";
+    document.querySelector("body").style.color="lightCyan";
+}
+else{
+    currMode="light";
+    document.querySelector("body").style.backgroundColor="lightpink";
+    document.querySelector("body").style.color="darkmagenta";
+}
+console.log (currMode);
+});
+
+   </script>
+</body>
+</html>

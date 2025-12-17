@@ -1,0 +1,719 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+        padding: 1px;
+        position: relative;
+        background-image: linear-gradient(to right,pink,skyblue);
+    }
+.navbar{
+    
+    color: white;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    filter: drop-shadow(0 15px 50px white);
+    position: fixed;
+    
+}
+.navlist ul{
+    list-style: none; 
+    display: flex;
+    gap: 5%;
+    margin-left: 3%;
+}
+.navlist ul li{
+    padding: 5px;
+    margin: 20px;
+    font-size: 23px;
+    line-height: 0.2;
+    font-weight: bold;
+    font-family: cursive;
+}
+.navlist ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navlist ul li :hover{
+background-color: white;
+color: blue;
+border-radius: 3px;
+
+}
+#menuicon{
+    color: darkred;
+}
+.mid{
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    padding: 15px;
+    
+
+}
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    float: right;
+    overflow:hidden;
+    
+    
+}
+
+.btn{
+    margin: 0px 20px 0px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0px solid transparent;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: box-shadow 0.3s ease;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    border-radius: 13px;
+    box-shadow: -5px -5px 20px rgb(250, 250, 3), 5px 5px 20px rgb(3, 252, 3) ;
+}
+.bottom{
+    margin: 20% 0% -5%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.heading2{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0% 10% 0%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+    
+}
+.abtimg{
+        float: left;
+       padding: 0px;
+       margin-top: 10%;
+       
+        }
+        .contentabt{
+           width: 50%;
+           margin: 10% 50% 0%;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .abtbtn{
+        height: 35px;
+      width: 100px;
+        margin-left: 200px;
+          margin-top: 50px;
+         border-radius: 5px;
+    border: 0px solid transparent;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: box-shadow 0.3s ease;
+         }
+
+         .abtbtn:hover{
+             border-radius: 13px;
+    box-shadow: -5px -5px 20px rgb(250, 250, 3), 5px 5px 20px rgb(3, 252, 3) ;
+}
+         
+
+        .heading3{
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+         margin: 30% 10% 0%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+        }
+        .skillimg{
+            float: right;
+            padding: 1px;
+            margin-top: 0%;
+            margin-left: 30%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+               
+/*.box1{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black; 
+} */
+.boxes{
+    height: 50px;
+    width: 400px;
+    gap: 20px;
+    border: 1px solid transparent;
+    line-height: 2;
+    border-radius: 8px;
+    margin: 5% 10% 0%;
+    text-align: center;
+    border-bottom: 3px solid rgba(5, 5, 243, 0.644);
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    filter: drop-shadow(0 15px 50px skyblue);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+ } 
+ .boxes:hover {
+        transform: scale(1.2);
+        transition: 1s;
+
+    }
+
+    .heading4{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 20% 10% 0%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+    }
+    .cards-container{
+            background-color: transparent;
+            height: 500px;
+            width: 1100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            justify-content: space-around;
+            
+        }
+        .cardbox{
+            background-color: transparent;
+            border: 2px solid transparent;
+            height: 300px;
+            width: 300px;
+            border-radius: 5px;
+            filter: drop-shadow(10px 10px 50px rgb(228, 105, 125));
+           
+               }
+            
+               
+             img{
+                border-radius: 5px;    /*cards iamges*/
+                object-fit: cover;
+             }
+
+          /* .box4{         
+            height: 50px;
+            width: 800px;
+            border: 1px solid black;
+            justify-content: center;
+            margin: 50px;
+
+           }  */
+          
+         
+        .list  {
+             display: flex;
+            list-style: none;
+            justify-content: space-between;
+            line-height: 2;
+            font-family: cursive;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: capitalize;
+            text-shadow: 2px 2px greenyellow;
+             animation: animate 10s linear infinite;
+              }
+              @keyframes animate {
+                to {
+                    translate:calc(-5 * 16rem)
+                }
+               }
+               .heading5{
+                 text-align: center;
+                  color: blue;
+                  text-decoration: double;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  font-size: 30PX;
+                  font-weight: bold;
+                  padding: 5px;
+                  margin: 20% 10% 0%;
+                   }
+
+                   .caption{
+                    height: 50px;
+                    width: 280px;
+                    border-radius: 5px;
+                    background-color: white;
+                    text-align: center;
+                    line-height: 2;
+                    font-family: cursive;
+                    font-weight: bold;
+                    color: darkmagenta;
+                    font-size: 20px;
+                    }
+
+                    .caption:hover{
+                        background-color: bisque;
+                    }
+    .heading6{
+        font-size: 30px;
+        color: darkolivegreen;
+        font-weight: bold;
+        text-decoration: underline;
+
+    }
+       .para{
+        font-family: cursive;
+        color: steelblue;
+
+       }   
+       .heading7{
+        font-size: 30px;
+        color: darkolivegreen;
+        font-weight: bold   ;
+        margin-top: 40px;
+        text-decoration: underline;
+       }  
+       .paralist{
+        color: steelblue;
+        font-family: cursive;
+
+    
+
+
+       }  
+    .contact{
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+         margin: 10% 10% 0%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+        
+    }
+
+    .contactdetails{
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+        line-height: 2;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+          }
+          #txtbox{
+            border-radius: 5px;
+            height: 50px;
+            width: 300px;
+            margin-left: 230px;
+            justify-content: center;
+            align-items: center;
+            border: 3px dotted black;
+            
+          }
+          .contactbtn{
+            height: 50px;
+            width: 100px;
+            margin-left:400px;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+             transition: box-shadow 0.3s ease;
+          }
+
+          .contactbtn:hover{
+            background-color: slategrey;
+            color: goldenrod;
+             border: 3px solid transparent;
+             box-shadow: -5px -5px 20px rgb(240, 6, 240), 5px 5px 20px rgb(3, 252, 3) ;
+     }
+
+     .endsection{
+        justify-content: center;
+        align-items: center;
+      }
+    .box6{
+        height: 500px;
+        width: 1349px;
+        border: 1px solid black;
+        margin-top: 10%;
+        margin-left: -0.1%;
+        background-color: rgb(118, 160, 194);
+        border: transparent;
+       }
+
+       .aboutus{
+        line-height: 5;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-display:block;
+        text-decoration: underline;
+}
+
+#icon2{
+    margin-right: 10px;
+}
+
+   .personallist{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2;
+    color:  cornsilk;
+    
+   }
+
+   .lastlines{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    color: cornsilk;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11px;
+
+   }
+  .box7{
+    border: 1px solid transparent;
+    height: 30px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 30px;
+    
+  }
+.iconlist{
+    list-style: none;
+    display: flex;
+     text-align: center;
+     color: brown;
+     font-size: 20px;
+    gap: 10px;
+    margin-left: 30px;
+    
+
+}
+
+#icon:hover{
+ transform: scale(1.2);
+        transition: 1s;
+}
+
+            
+            
+         
+
+    
+
+</style>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="navlist">
+                <ul>
+                    <li> <a href="file:///C:/Users/Dell/Documents/index.html/portfolio.html.html"><i class="fa-solid fa-house" id="menuicon"></i>Home</a></li>
+                    <li>  <a href="file:///C:/Users/Dell/Documents/index.html/aboutme.html" target="main"><i class="fa-solid fa-address-book" id="menuicon"></i>About </a></li>
+                    <li> <a href="file:///C:/Users/Dell/Documents/index.html/Skills.html" target="main"><i class="fa-solid fa-microchip"id="menuicon"></i> Skills</a></li>
+                    <li> <a href="file:///C:/Users/Dell/Documents/index.html/services%20form%20dhiraj%20kothari.html" target="main"> <i class="fa-solid fa-laptop"id="menuicon"></i>Services</a></li>
+                      <li> <a href="file:///C:/Users/chauh/OneDrive/Desktop/mahi-1.html"><i class="fa-solid fa-file"id="menuicon"></i>Resume</a></li>
+                    <li> <a href="file:///C:/Users/Dell/Documents/index.html/contact%20form%20dhiraj%20kothari.html" target="main"><i class="fa-solid fa-phone-volume"id="menuicon"></i>Contact</a></li>
+                </ul>
+            </div> <!---navlist-->
+    </nav>
+ </div>  <!--nav-->
+
+    <div class="mid">
+
+ <div class="heading">
+    <header>
+        Hi,<br> I am MERLON <br> I am a Web Designer
+    </header>
+        <div>
+        <img src="C:\Users\Dell\Desktop\Coding photos\dhiraj professional short img.jpeg" height="300px" width="300px" class="img1"> 
+    </div>
+     
+ </div>  <!---heading-->
+
+ <div>
+    <button class="btn"><a href="file:///C:/Users/Dell/Documents/APPLICATION%20FORM/contact%20form%20dhiraj%20kothari.html">CONTACT</a></button>
+ </div>
+
+ <div class="bottom">
+    <div class="heading2">
+        <header>About</header>
+         <img src="C:\Users\Dell\Desktop\Coding photos\dhiraj professional short img.jpeg" alt="" height="300px" width="300px" class="abtimg"> 
+           </div>  <!--heading2-->
+
+           
+           <div class="contentabt">
+            <p> Hey, I am DHIRAJ KOTHARI a creative and versatile web designer with a keen eye for detail. I 
+                specialige in creating visually stunning designs that convey a brand's message and captivate us audience.I'm well versed in a variety of design software and techniques and always looking for new 
+             ways to enhance my skills. I have a strong background in core skills e.g front-and development with experise in react, nodejs Html,css over the past one years I've worked on diverse projects includig (e.g building, scable e-commerce websites designing intuitive fox )</div><br><br></p>
+
+             <div>
+                <button class="abtbtn"> ABOUT ME </button>
+             </div>
+            </div>  <!--contentabt-->
+
+           
+             
+                <div class="heading3">
+                    <header>SKILLS</header>
+                </div>  <!--heading3-->
+
+                    <div>
+                     <img src="https://thumbs.dreamstime.com/b/man-working-laptop-back-view-businessman-sitting-front-screen-typing-modern-office-young-student-typing-65374164.jpg" alt="" height="300px" width="350px" class="skillimg"> 
+                    <div class="boxes">HTML</div>
+                     <div class="boxes">CSS</div>
+                     <div class="boxes">JAVASCRIPT</div>
+                    </div>  <!---skillsimg-->
+
+                    <div class="heading4">
+                        <header>SERVICES</header>
+                    </div>  <!--heading3-->
+    
+
+                    <div class="cards-container">
+                        <div class="cardbox"> 
+                            <figure>
+                            <img src="https://i.pinimg.com/originals/b4/79/e7/b479e71457c44c6595d0a2cd3a904cd5.jpg" height="295px" width="295px" alt="">
+                            <figcaption>
+                                <div class="caption"><a href="file:///C:/Users/Dell/Documents/portfolio%20web%20site/services%20form%20dhiraj%20kothari.html" target="main">HTML</a></div>
+                                </figcaption>
+                                </figure>
+                         </div>
+
+                        <div class="cardbox"> 
+                            <figure>
+                            <img src="https://static.vecteezy.com/system/resources/previews/026/793/730/large_2x/double-exposure-of-a-business-man-using-laptop-on-his-desk-front-view-office-background-realistic-image-ultra-hd-high-design-very-detailed-photo.jpg" height="295px" width="295px" alt="">
+                            <figcaption>
+                                <div class="caption"><a href="file:///C:/Users/Dell/Documents/portfolio%20web%20site/services%20form%20dhiraj%20kothari.html" target="main"> CSS </a> </div>
+                                </figcaption>
+                                </figure>
+                             </div>
+
+                        <div class="cardbox">
+                            <figure>
+                            <img src="https://th.bing.com/th/id/OIP.Wh-5kZujB7aJPBwnxcOQBgHaEo?rs=1&pid=ImgDetMain" height="295px" width="295px" alt="" >
+                            <figcaption>
+                                <div class="caption"><a href="file:///C:/Users/Dell/Documents/portfolio%20web%20site/services%20form%20dhiraj%20kothari.html" target="main">JAVASCRIPT</a></div>
+                            </figcaption>
+                            </figure>
+                            </div>
+                    </div>  <!--cards-container-->
+
+                    <div class="box4">
+                        <ul class="list">
+                            <li>html</li>
+                            <li>css </li>
+                            <li>javascript</li>
+                            <li>Reactjs </li>
+                            <li>Tailwid</li>
+                            <li>Bootstrap</li>
+                            <li>Mysqi</li>
+                        </ul>
+                      </div>
+
+                    <div class="heading5"> 
+                     <header>RESUME</header>
+                    </div>
+
+                    <div class="heading6">
+                        <header>EDUCATION QUALIFICATION</header>
+                    </div> <br> <br>
+
+                    <div class="para">
+                        <h4>SECONDAREY EDUCATION</h4> <br> 
+                        <P>YEAR:- 2022-2023</P>
+                        <P>SCHOOL:-AAKANKSHA SENIOR SECONDAREY SCHOOL</P> <br> <br>
+                        </div>
+
+                        <div class="para">
+                            <h4>SENOIR SECONDAREY EDUCATION</h4> <br>
+                            <P>YEAR:-2023-2024</P>
+                            <P>SCHOOL:-LBS CONVENT SCHOOL</P>
+                        </div>
+
+                            <div class="para">
+                                <h4> GRADUTION  </h4> <br>
+                                <P>YEAR:- 2025-2026</P>
+                                <P>Collage:-1st Year</P>
+                                <p> COLLAG NAME:- MIRHA COLLAGE NAGAUR</p>
+                                </div>
+                                 
+                                
+
+                               <div class="heading7">
+                                    <heder>TECHNICAL SKILLS</header>
+                               </div> <br> <br>
+
+
+             <div class="para">
+                <P>1. Front-end: HTML,CSS,JAVA SCRIPT </P>
+                <P>2. Programming language : core java </P>
+                <p>3. Practiced in microsoft office applications like Word, Excel and powerpoint to creating and managing 
+                    document ,spreadsheets, presentations, and more, enhancing productivity and efficiency in various
+                tasks </p> <br> <br>
+             </div>
+
+                            <div class="heading7">
+                             <heder>PROJECT</header>
+                               </div> <br> <br>
+         
+         <div class="para">
+            <p> 1. Developed responsive and interactive web application using javascript, HTML,and CSS </p>
+            <p> 2. Develop and maintain software application using modern programming languages and framework </p>
+            <p> 3. Engage in continuous learning to stay update with emerging technologies and travels </p>
+            <p> 4. Assist in debugging and troubleshooting software issues to enhance application perfomance </p>
+            <p> 5. Analyze user requirement to contribute to software design and functionlity improvement </p>
+            
+         </div>
+        
+
+        <div class="heading7">
+            <header>HOBBIES:</header>
+        </div> <br> <br>
+         
+        <div class="para">
+            <p>1. Travelling</p>
+            <p>2. HELPING in the poor peoples and animals </p>
+            <p>3. RIDING new BIKES & CARS </p>
+            <P>4. Wearing new watches and new clothes</P>
+        </div>
+
+
+        <div class="heading7">
+           <header>STRENGTHS:</header>
+        </div> <br> <br>
+
+        <div class="para">
+            <p>1. I am a optimistic person and have the capability to work with perseverance</p>
+            <p>2. I am a swift learner and have the ability to learn different skills</p>
+            <p>3. I can easily adapt to any type of work enviroment  </p>
+            <p>4. I also believe in honesty and hard work because honesty is the best policy and hard work always pays</p>
+        </div>
+
+
+    <div class="heading7">
+    <header>PERSONAL DETAILS:</header>
+    </div> <br> <br>   
+    
+    <div class="paralist">
+        <ol>
+         <li>NAME:- DHIRAJ KOTHARI</li>
+         <li>DATE OF BIRTH:- 14-6-2006</li> 
+         <li>FATHER'S NAME :- NARENDARE KOTHARI</li>
+         <li> NATIONALITY:- INDIAN</li>
+         <li> GENDER:- MALE</li>
+         <li> MARITAL STATUS :- UNMARRIED</li>
+         <li> LANGUAGES KNOWN :- ENGLISH & HINDI</li>
+        </ol> 
+    </div>
+    
+    <div class="contact">
+        <header>CONTACT</header>
+     </div>
+
+     <div class="contactdetails">
+     <input type="text" placeholder="Name" id="txtbox">  <br> <br>
+     <input type="text" placeholder="Contact" id="txtbox"> <br> <br>
+      <input type="text" placeholder="E-mail" id="txtbox">
+     </div>
+
+     <div >
+        <button class="contactbtn"> Send </button>
+    </div>
+      </div>  <!--bottom-->
+      </div> <!---mid-->
+
+    <div class="endsection">
+        <div class="box6">
+
+            <div>
+            <h4 Class="aboutus">ABOUT US</h4>
+             </div>
+            
+             <div class="personallist">
+                <ul>
+                    <li><i class="fa-solid fa-phone-volume" id="icon2"></i>Contact:-9413920639</li>
+                    <li> <i class="fa-sharp fa-solid fa-envelope"id="icon2"></i>Email-id on us:-dhirajkothari242526@gmail.com</li>
+                    <li><i class="fa-brands fa-facebook" id="icon2"></i>facebook:-dhirajkothari</li>
+                    <li><i class="fa-brands fa-linkedin"id="icon2"></i>linkedIn:-http://www.linkedin.com/dhirajkothari-460218245</li>
+                    <li><i class="fa-brands fa-square-x-twitter" id="icon2"></i>Twitter:-htttp://www.twitter.com/dhirajkothari</li>
+                    <li><i class="fa-sharp fa-solid fa-location-dot"id="icon2"></i>Location:-Ganesh chowk near by sawa ki gali,<br>  NAGAUR (RAJ).</li>
+                     </ul>
+                    </div>
+
+                     <div class="box7">
+                        <ul class="iconlist">
+                            <li><i class="fa-brands fa-facebook" id="icon"></i></li>
+                            <li><i class="fa-brands fa-linkedin"id="icon"></i></li>
+                            <li><i class="fa-brands fa-square-x-twitter" id="icon"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-envelope"id="icon"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-phone"id="icon"></i></li>
+                            <li><i class="fa-sharp fa-solid fa-location-dot"id="icon"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="lastlines">
+                        <p>Copyright 2025. All rights reserved by dhiraj pvt ltd</p>
+                        <p> Privacy Policy terms of Service</p>
+                    </div>
+
+                   
+            
+             </div>  <!----box6-->
+        </div>  <!----end-section-->
+                    
+                        
+    </body>
+</html>
